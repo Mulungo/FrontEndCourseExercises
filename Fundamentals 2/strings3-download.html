@@ -29,7 +29,13 @@
     let quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
     // Add your code here
-
+    fixedQuote = quote.charAt(0).toUpperCase() + quote.substring(1).toLowerCase();
+    console.log(fixedQuote);
+    let index = fixedQuote.indexOf("green");
+    console.log(index);
+    whatIHate = "to eat octopus";
+    fixedQuote = fixedQuote.substring(0, 14) + whatIHate;
+    finalQuote = fixedQuote + ".";
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
