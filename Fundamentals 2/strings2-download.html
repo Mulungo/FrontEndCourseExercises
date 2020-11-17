@@ -30,7 +30,17 @@
     let substring = 'green eggs and ham';
 
     // Add your code here
-
+    let quoteLength = quote.length;
+    console.log(quoteLength);
+    let index = quote.indexOf(substring);
+    console.log(index);
+    // Method 1: Using the variables available plus slice. 
+    // let revisedQuote = quote.slice(0, index) + substring + ".";
+    // Method 2: using slice. 
+    // let revisedQuote = quote.slice(0, 33); 
+    // Method 3: using substring. 
+    let revisedQuote = quote.substring(0, 33);
+    console.log(revisedQuote);
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
