@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fundamentals 3 exercise">
+    <title>Fundamentals 3</title>
+</head>
+<body>
+    <script>
+        // 1) Function declaration
+        function add7 (number) {
+            console.log (number + 7);
+        }
+        add7(9);
+
+        // 2) Function Expression
+        const multiply = function (a,b) {
+            console.log (a * b);
+        }
+        multiply(6,2);
+
+        // 3) Arrow Function
+        let capitalize = (string) => {
+            string = string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+            console.log(string);
+        }
+        capitalize("I Do NoT LiKE BanANaS");
+
+        // 4) Function declaration
+        function lastLetter (string) {
+            string = string.slice(-1);
+            console.log(string);
+        }
+        lastLetter("social hackers academy");
+
+    </script>    
+</body>
+</html>
