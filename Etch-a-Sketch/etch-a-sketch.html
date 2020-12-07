@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+        }
+
+        #container {
+            margin: 25px;
+            display: inline-grid;
+            grid-template-columns: repeat(var(--grid-cols), 2fr);
+            grid-template-rows: repeat(var(--grid-rows), 2fr);
+            border: 5px solid black;
+            border-radius: 5px;
+            height: 600px;
+            width: 600px;
+
+        }
+
+        .grid-item {
+            border: 1px solid #ddd;
+        }
+
+        .active-grid {
+            background-color: green;
+        }
+
+        button {
+            padding: 8px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="clearScreen()" id="clear">Clear</button>
+    <section id="container">
+
+    </section>
+    <script>
+        const container = document.getElementById("container");
+        let squares = prompt("How many squares per side?");
+
+        // Creates the grid according to user input of number of squares
+        function createGrid(rows, cols) {
+            container.style.setProperty('--grid-rows', rows);
+            container.style.setProperty('--grid-cols', cols);
+            for (c = 0; c < (rows * cols); c++) {
+                let cell = document.createElement("div");
+                let cellId = cell.id = (c + 1);
+                container.appendChild(cell).className = "grid-item";
+            };
+        };
+
+        createGrid(squares, squares);
+
+        // Function that adds a class to give background color on hover in CSS
+        // function addClass() {
+        //     let gridSelector = document.querySelectorAll(".grid-item");
+        //     gridSelector.forEach(function (elem) {
+        //         elem.addEventListener("mouseover", function () {
+        //             elem.classList.add("active-grid");
+        //         });
+        //     });
+        // }
+        // addClass();
+
+        // Function that adds a random background color to each grid item on hover using JS
+        function addClass() {
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            let gridSelector = document.querySelectorAll(".grid-item");
+            gridSelector.forEach(function (elem) {
+                elem.addEventListener("mouseover", function () {
+                    elem.style.backgroundColor = "#" + randomColor;
+                });
+            });
+        }
+        addClass();
+
+        // Function that resets the grid and asks the user for input of new grid layout then creates it and adds the hover effect        
+        function clearScreen() {
+            container.innerHTML = '';
+            squares = prompt("How many squares per side?");
+            createGrid(squares, squares);
+            addClass();
+        }
+        
+    </script>
+</body>
+
+</html>
