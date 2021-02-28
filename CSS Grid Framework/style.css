@@ -1,0 +1,364 @@
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.sidebar {
+    font-family: "franklin-gothic-urw-comp-1","franklin-gothic-urw-comp-2";
+    text-transform: none;
+}
+
+h1,h2,h3,h4,h5,h6,#nav,legend {
+    font-family: "franklin-gothic-urw-comp-1","franklin-gothic-urw-comp-2"
+}
+
+a {
+    color: #369;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #900;
+}
+
+fieldset {
+    background: #fff;
+    border: 0;
+}
+
+fieldset.no_legend {
+    padding-top: 15px;
+}
+
+.sidebar {
+    font-size: 18px;
+}
+
+li {
+    line-height: 24px;
+}
+
+legend {
+    padding: 15px 0 0 0;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 15px;
+}
+
+h3 span {
+    margin: 0 0 0 10px;
+    font-size: 50%;
+    font-weight: 400;
+    color: #666;
+}
+
+h4 span {
+    margin: 0 0 0 10px;
+    font-size: 70%;
+    font-weight: 400;
+    color: #666;
+}
+
+img.icon {
+    padding: 0 6px 4px 0;
+    vertical-align: bottom;
+    height: 15px;
+    width: 15px;
+}
+
+img.icon.light {
+    opacity: .6;
+    filter: alpha(opacity=40);
+}
+
+#footer .icon {
+    padding: 1px 2px 3px 1px;
+    vertical-align: middle;
+    height: 14px;
+    width: 14px;
+}
+
+#footer .light {
+    color: #ccc;
+}
+
+#header {
+    padding: 15px 0;
+    margin: 0;
+    color: #fff;
+    border-bottom: solid #333 1px;
+    background: #333;
+}
+
+#header a,#footer a {
+    color: #ccc;
+}
+
+#logo a {
+    padding: 14px 0 6px 0;
+    text-align: center;
+}
+
+#logo img {
+    height: 80px;
+    width: 80px;
+}
+
+#nav {
+    list-style-type: none;
+    padding-top: 34px;
+    margin: 0 -15px 0 0;
+    float: right;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#nav ul li a {
+    font-weight: 400;
+}
+
+#nav ul {
+    list-style-type: none;
+    position: absolute;
+    left: -9999px;
+    z-index: 5000;
+    width: 180px;
+}
+
+#nav ul li {
+    padding-top: 1px;
+    float: none;
+}
+
+#nav li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#nav a {
+    padding: 5px 15px;
+    padding: 10px 20px;
+    color: #eee;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#nav a:hover {
+    color: #fff;
+}
+
+#nav li a.live {
+    background: #900;
+}
+
+#nav li a.active {
+    background: black;
+}
+
+#nav ul a {
+    white-space: nowrap;
+}
+
+#nav li:hover ul {
+    left: 0;
+}
+
+#nav li:hover a {
+    background: #585858;
+}
+
+#nav li:hover ul li a:hover {
+    color: #fff;
+    background: #585858;
+}
+
+#nav ul li {
+    margin-left: 0;
+}
+
+#content {
+    margin: 0;
+    padding: 25px 0;
+    background: #fff;
+    border-top: solid #eee 1px;
+}
+
+#footer {
+    padding: 20px 0 15px 0;
+    margin: 0;
+    background: #585858;
+    color: #fff;
+    font-family: "franklin-gothic-urw-comp-1","franklin-gothic-urw-comp-2";
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#footer .image {
+    border: solid #5c5c5c 3px;
+}
+
+#footer .image:hover {
+    border: solid #6c6c6c 3px;
+}
+
+#footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+#footer #copyright {
+    margin: 20px 0 0 0;
+    text-align: center;
+    color: #999;
+    font-size: 15px;
+    line-height: 13px;
+}
+
+#footer h4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#footer #copyright p {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer a {
+    color: #ccc;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+#bottom_links {
+    text-align: center;
+}
+
+.slide {
+    padding: 10px 5px 5px 5px;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    height: 205px;
+    display: inline-block;
+}
+
+.slide:hover {
+    background: #eee;
+}
+
+.slide.last {
+    margin-right: 0;
+}
+
+.slide h4 {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    line-height: 20px;
+    font-weight: 900;
+}
+
+.slide p {
+    margin: 6px 0 0 0;
+}
+
+.bumper_bottom {
+    margin-bottom: 30px;
+}
+
+#social_icons {
+    padding-bottom: 10px;
+}
+
+.subscribe p {
+    margin: 0 0 10px 0;
+}
+
+.listen ul,.subscribe ul {
+    padding: 0;
+    margin: 0 0 10px 20px;
+    list-style: none;
+}
+
+.listen ul li,.subscribe ul li {
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+}
+
+.subscribe ul {
+    margin-left: 4px;
+}
+
+.subscribe.box {
+    padding: 10px 10px 5px 10px;
+}
+
+.listen.box {
+    padding: 10px 10px 0 10px;
+}
+
+#jumbotron {
+    background: #eee;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 30px 0 20px 0;
+    border-top: solid #111 1px;
+    border-bottom: solid #bbb 1px;
+    white-space: nowrap;
+    margin: -26px 0 40px 0;
+}
+
+#jumbotron h2 {
+    margin: 0 0 10px 10px;
+}
+
+#jumbotron .slide {
+    width: 214px;
+    height: 250px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.broadcast_thumb {
+    float: left;
+    text-align: center;
+    width: 110px;
+    height: 150px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.broadcast_thumb.last {
+    margin-right: 0;
+}
