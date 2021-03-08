@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Library</title>
+</head>
+
+<body>
+    <form action="#" class="form-container">
+        <fieldset>
+            <legend>Book Library</legend>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author">
+            <label for="pages">Pages</label>
+            <input type="number" name="pages" id="pages">
+            <select class="u-full-width" id="read">
+                <option value="false">Currently reading</option>
+                <option value="true">Read</option>
+            </select>
+            <button type="submit">Add Book</button>
+        </fieldset>
+    </form>
+    <div class="main">
+        <table class="u-full-width" id="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
